@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 1200px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #4a5568;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+    border-radius: 10px;
+    border: 3px solid #e17055;
+}
+
+.player-info {
+    text-align: center;
+    flex: 1;
+}
+
+.player-info h3 {
+    color: #2d3436;
+    margin-bottom: 5px;
+}
+
+.player-info p {
+    color: #636e72;
+    font-size: 0.9em;
+    margin: 3px 0;
+}
+
+.player-info span {
+    font-weight: bold;
+    color: #d63031;
+    font-size: 1.3em;
+}
+
+.game-status {
+    flex: 1;
+    text-align: center;
+}
+
+#status {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2d3436;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+}
+
+#gameCanvas {
+    display: block;
+    margin: 0 auto;
+    border: 5px solid #6c5ce7;
+    border-radius: 10px;
+    background: #a8e6cf;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.controls {
+    margin-top: 20px;
+    padding: 15px;
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.controls p {
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+.controls strong {
+    font-size: 1.2em;
+}
+
+/* Pixel-Art Style */
+canvas {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
